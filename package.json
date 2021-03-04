@@ -26,7 +26,7 @@
     "browser-sync-webpack-plugin": "^2.0.1",
     "cross-env": "^7.0",
     "laravel-mix": "^6.0.9",
-    "laravel-mix-pug": "^0.3.0",
+    "laravel-mix-pug-recursive": "^0.3.4",
     "lodash": "^4.17.19",
     "postcss": "^8.1.8",
     "pug": "^3.0.0",

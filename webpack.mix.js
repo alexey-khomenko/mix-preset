@@ -1,5 +1,5 @@
 let mix = require('laravel-mix');
-mix.pug = require('laravel-mix-pug');
+mix.pug = require('laravel-mix-pug-recursive');
 
 mix
     .setPublicPath('docs')
@@ -13,7 +13,8 @@ mix
             require('tailwindcss')('tailwind.config.js'),
         ]
     })
-    .pug('resources/views/pages/*.pug', '../../../docs', {
+    .pug('resources/views/pages/*.pug', 'docs', {
+        excludePath: 'resources/views/pages',
         pug: {
             pretty: true
         }
